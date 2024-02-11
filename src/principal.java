@@ -10,6 +10,7 @@ public class principal {
         int dato=teclado.nextInt();
 
         //Creamos un vector para comprobar los numeros comprendidos entre 1 y dato
+        //no le damos dimensiones, se la dará el método correspondiente
         int[] vector;
 
         System.out.println("\nVector inicial hasta : "+dato);
