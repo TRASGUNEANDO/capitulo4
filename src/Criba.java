@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Criba {
 
-    // Generar números primos de 1 a max
+// Generar números primos de 1 a max
     public static int[] generarPrimos(int max)
     {
         int[] primos; //array que contendrá los números primos obtenidos y que devolveremos
@@ -11,7 +11,7 @@ public class Criba {
 
             boolean[] esPrimo = new boolean[max+1]; //max+1 es el tamaño del array porque
             //hay que añadir el 0
-            // Criba
+
             calcularEsPrimo(esPrimo); //se verifica para cada números si es o no primo
             primos = numerosPrimosHay(esPrimo); //se crea un array solo con los núm primos
         } else { // max < 2
@@ -21,7 +21,7 @@ public class Criba {
         return primos;
     }
 
-    //Devuelve un array con los números primos que hay en los primeros n números naturales
+//Devuelve un array con los números primos que hay en los primeros n números naturales
     private static int[] numerosPrimosHay(boolean[] esPrimo) {
         int j;
         int i;
@@ -37,7 +37,7 @@ public class Criba {
         return primos;
     }
 
-    //Calcula en el array de números si son primos o no los números de los índices
+//Calcula en el array de números si son primos o no los números de los índices
     //del array
     private static void calcularEsPrimo(boolean[] esPrimo) {
         int i;
@@ -53,7 +53,7 @@ public class Criba {
         }
     }
 
-    // devuelve la cantidad de números primos que hay en el array
+// devuelve la cantidad de números primos que hay en el array
     private static int cuentaPrimos(boolean[] esPrimo) {
         int i;
         int cuenta = 0;
@@ -63,6 +63,8 @@ public class Criba {
         }
         return cuenta;
     }
+
+// muestra los elementos int que hay en un array, en filas de 10 elementos
     public static void mostrarElementosArray(int[] vector) {
         if (vector!=null) {
             for (int i = 0; i < vector.length; i++) {
@@ -71,6 +73,9 @@ public class Criba {
             }
         }
     }
+
+//Se obtiene un array conteniendo los 'dato' primeros números para después mostrarlos con
+//el método correspondiente
 
     public static int[] tablaConsecutivos(int dato) {
         int[] numeros = new int [dato];
